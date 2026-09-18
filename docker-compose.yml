@@ -14,7 +14,7 @@ services:
       - ./database/postgres/data.sql:/docker-entrypoint-initdb.d/02-data.sql
 
   mongodb:
-    image: mongo:8
+    image: mongo:7
     container_name: metro-mongodb
     ports:
       - "27017:27017"
